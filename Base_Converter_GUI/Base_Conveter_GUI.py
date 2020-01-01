@@ -4,13 +4,14 @@ from tkinter import *
 root = Tk()
 root.title("Base Converter")
 root.geometry("350x500")
+#root.resizable(0,0)
 root.configure(background = 'grey')
 root.grid_rowconfigure(0, weight=1)
 root.grid_columnconfigure(0, weight=1)
 
 # Title
 title_label = Label(root, text = "Base Converter")
-title_label.place(relwidth = 0.5, relheight = 0.1, relx = 0.05, rely = 0.05)
+title_label.place(relwidth = 0.5, relheight = 0.1, relx = 0.25, rely = 0.05)
 
 # Input field
 number_label = Label(root, text = "Number: ")
@@ -53,7 +54,7 @@ swap_button.place(relwidth = 0.25, relheight = 0.1, relx = 0.65, rely = 0.65)
 result = Text(root)
 result.insert(END, "TEST")
 result.config(state=DISABLED)
-result.place(relwidth = 0.5, relheight = 0.1, relx = 0.35, rely = 0.8)
+result.place(relwidth = 0.5, relheight = 0.1, relx = 0.25, rely = 0.8)
 
 
 root.mainloop()
