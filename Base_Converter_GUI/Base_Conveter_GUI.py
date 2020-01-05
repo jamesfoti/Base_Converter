@@ -97,7 +97,28 @@ def convert():
     if from_base_dropdown_value.get() == to_base_dropdown_value.get():
         result.insert(END, entry.get())
 
-    # Insert the value and disable the text widget
+    elif from_base_dropdown_value.get() == "Decimal":
+        if to_base_dropdown_value.get() == "Binary":
+            result.insert(END, decimal_to_binary(entry.get()))
+        elif to_base_dropdown_value.get() == "Hexadecimal":
+            result.insert(END, decimal_to_hexadecimal(entry.get()))
+
+    elif from_base_dropdown_value.get() == "Binary":
+        if to_base_dropdown_value.get() == "Decimal":
+            result.insert(END, binary_to_decimal(entry.get()))
+        elif to_base_dropdown_value.get() == "Hexadecimal":
+            # temporary solution until binary_to_hexadecimal() function is created!
+            to_decimal = binary_to_decimal(entry.get())
+            result.insert(END, decimal_to_hexadecimal(to_decimal))
+
+    elif from_base_dropdown_value.get() == "Hexadecimal":
+        if to_base_dropdown_value.get() == "Decimal":
+            result.insert(END, hexadecimal_to_decimal(entry.get()))
+        elif to_base_dropdown_value.get() == "Binary":
+            # temporary solution until hexadecimal_to_binary() function is created!
+            to_decimal = hexadecimal_to_decimal(entry.get())
+            result.insert(END, decimal_to_binary(to_decimal))
+
     result.config(state=DISABLED)
 
 
@@ -122,22 +143,118 @@ def copy():
     root.clipboard_append(result.get("1.0", "end-1c"))
 
 
-# Decimal_To_Binary():
-# Do stuff
+def decimal_to_binary(num):
+    """
+    ONLY FOR POSITVE NUMBERS (at the moment)!
+    """
+    try:
+        num = int(num)
+        binary = []
 
-# Decimal_To_Hex():
-# Do stuff
+        if num == 0:
+            return 0
 
-# Binary_To_Decimal():
-# Do stuff
+        while (num != 0):
+            binary.append(num % 2)
+            num = int(num / 2)
+        binary.reverse()
+        binary = int(''.join(map(str, binary)))
+        return binary
+    except:
+        return "Oops! That was no valid number. Try again..."
 
-# Binary_To_Hex():
-# Do stuff
 
-# Hex_To_Decimal():
-# Do stuff
+def binary_to_decimal(num):
+    """
+    ONLY FOR POSITVE NUMBERS (at the moment)!
+    """
+    try:
+        decimal = []
 
-# Hex_To_Binary():
-# Do stuff
+        num = [int(x) for x in str(num)]
+
+        index = len(num) - 1
+
+        for i in range(len(num)):
+            if num[i] == 1:
+                decimal.append(2 ** index)
+            elif num[i] > 1:
+                return "Oops! That was no valid number. Try again..."
+
+            index = index - 1
+
+        decimal = np.sum(decimal)
+
+        return decimal
+    except:
+        return "Oops! That was no valid number. Try again..."
+
+
+def decimal_to_hexadecimal(num):
+    """
+    ONLY FOR POSITVE NUMBERS (at the moment)!
+    """
+    try:
+        num = int(num)
+
+        hexadecimal = []
+
+        while (num != 0):
+            if (num % 16) == 10:
+                hexadecimal.append("A")
+            elif (num % 16) == 11:
+                hexadecimal.append("B")
+            elif (num % 16) == 12:
+                hexadecimal.append("C")
+            elif (num % 16) == 13:
+                hexadecimal.append("D")
+            elif (num % 16) == 14:
+                hexadecimal.append("E")
+            elif (num % 16) == 15:
+                hexadecimal.append("F")
+            else:
+                hexadecimal.append(num % 16)
+
+            num = int(num / 16)
+
+        hexadecimal.reverse()
+        hexadecimal = (''.join(map(str, hexadecimal)))
+        return hexadecimal
+    except:
+        return "Oops! That was no valid number. Try again..."
+
+
+def hexadecimal_to_decimal(num):
+    """
+    num: hexadecimal input represented as a STRING!
+    """
+
+    try:
+        decimal = []
+
+        index = len(num) - 1
+
+        for i in range(len(num)):
+            if num[i] == "A":
+                decimal.append(10 * (16 ** index))
+            elif num[i] == "B":
+                decimal.append(11 * (16 ** index))
+            elif num[i] == "C":
+                decimal.append(12 * (16 ** index))
+            elif num[i] == "D":
+                decimal.append(13 * (16 ** index))
+            elif num[i] == "E":
+                decimal.append(14 * (16 ** index))
+            elif num[i] == "F":
+                decimal.append(15 * (16 ** index))
+            else:
+                decimal.append(int(num[i]) * (16 ** index))
+            index = index - 1
+
+        decimal = np.sum(decimal)
+        return decimal
+    except:
+        return "Oops! That was no valid number. Try again..."
+
 
 root.mainloop()
