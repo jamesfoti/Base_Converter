@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58524edf-1abe-40cb-829d-fc6baa2f9e7f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Base_Conveter_GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Base_Conveter_GUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Base_Converter_Notebook/Base_Converter.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Base_Converter_Notebook/Base_Converter.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
