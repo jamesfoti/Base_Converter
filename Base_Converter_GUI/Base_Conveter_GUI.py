@@ -228,7 +228,6 @@ def hexadecimal_to_decimal(num):
     """
     num: hexadecimal input represented as a STRING!
     """
-
     try:
         decimal = []
 
