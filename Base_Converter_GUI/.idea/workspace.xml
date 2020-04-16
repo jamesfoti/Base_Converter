@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58524edf-1abe-40cb-829d-fc6baa2f9e7f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Base_Converter_GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Base_Converter_GUI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Base_Conveter_GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Base_Conveter_GUI.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +29,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Sail_Golden_Gate_Consulting_Intern_Assignment" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="Base_Converter_GUI" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="Base_Converter_GUI" />
+      </console-settings>
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -117,6 +125,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="692" y="324" key="#com.intellij.fileTypes.FileTypeChooser/-3000.-935.1500.980/0.0.1920.1040@0.0.1920.1040" timestamp="1577679080312" />
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1584515784360">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="276" key="FileChooserDialogImpl/-3000.-935.1500.980/0.0.1920.1040@0.0.1920.1040" timestamp="1584515784360" />
     <state width="1899" height="266" key="GridCell.Tab.0.bottom" timestamp="1578214296625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -149,17 +161,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.right/-3000.-935.1500.980/0.0.1920.1040@0.0.1920.1040" timestamp="1578082505030" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1577751735566">
+    <state x="461" y="163" key="SettingsEditor" timestamp="1584515645405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/-3000.-935.1500.980/0.0.1920.1040@0.0.1920.1040" timestamp="1577751735566" />
-    <state x="655" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1577746587567">
+    <state x="461" y="163" key="SettingsEditor/-3000.-935.1500.980/0.0.1920.1040@0.0.1920.1040" timestamp="1584515645405" />
+    <state x="655" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584515355637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="345" key="com.intellij.ide.util.TipDialog/-3000.-935.1500.980/0.0.1920.1040@0.0.1920.1040" timestamp="1577746587567" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577747852082">
+    <state x="655" y="345" key="com.intellij.ide.util.TipDialog/-3000.-935.1500.980/0.0.1920.1040@0.0.1920.1040" timestamp="1584515355637" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584515749210">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-3000.-935.1500.980/0.0.1920.1040@0.0.1920.1040" timestamp="1577747852082" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-3000.-935.1500.980/0.0.1920.1040@0.0.1920.1040" timestamp="1584515749210" />
   </component>
 </project>
